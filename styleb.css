@@ -1,0 +1,91 @@
+/* styleb.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Latar belakang abu-abu muda */
+    display: flex;
+    justify-content: center; /* Pusatkan konten secara horizontal */
+    align-items: center;     /* Pusatkan konten secara vertikal */
+    height: 100vh;          /* Mengambil seluruh tinggi viewport */
+    margin: 0;              /* Menghilangkan margin default */
+}
+
+.input {
+    background-color: rgba(255, 255, 255, 0.9); /* Putih dengan transparansi */
+    border-radius: 10px;    /* Sudut membulat */
+    padding: 30px;          /* Jarak dalam */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    text-align: center;      /* Teks rata tengah */
+    width: 90%;              /* Lebar responsif */
+    max-width: 350px;        /* Lebar maksimal */
+    margin: 20px;            /* Margin luar untuk memberi jarak */
+}
+
+h1 {
+    margin-bottom: 20px;     /* Jarak bawah dari judul */
+    font-size: 24px;         /* Ukuran font judul */
+    color: #333;             /* Warna teks judul */
+}
+
+.box-input {
+    position: relative;       /* Posisi relatif untuk ikon */
+    margin-bottom: 20px;     /* Jarak bawah dari input */
+}
+
+.box-input input {
+    width: 100%;              /* Lebar penuh */
+    max-width: 260px;         /* Batas maksimal lebar input */
+    padding: 10px 40px;      /* Jarak dalam */
+    border: none;            /* Menghilangkan border */
+    border-radius: 5px;      /* Sudut membulat */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    font-size: 14px;         /* Ukuran font input */
+}
+
+.box-input i {
+    position: absolute;       /* Posisi absolut untuk ikon */
+    left: 10px;              /* Jarak dari kiri */
+    top: 50%;                /* Pusatkan secara vertikal */
+    transform: translateY(-50%); /* Pusatkan secara vertikal */
+    color: #333;             /* Warna ikon */
+}
+
+.btn-input {
+    background-color: #333;   /* Warna latar belakang tombol */
+    color: white;             /* Warna teks tombol */
+    border: none;             /* Menghilangkan border */
+    padding: 10px 20px;      /* Jarak dalam tombol */
+    border-radius: 5px;      /* Sudut membulat */
+    cursor: pointer;          /* Kursor tangan saat hover */
+    width: 100%;              /* Lebar penuh tombol */
+    font-size: 16px;         /* Ukuran font tombol */
+    transition: background-color 0.3s; /* Efek transisi */
+}
+
+.btn-input:hover {
+    background-color: #555;   /* Warna latar belakang saat hover */
+}
+
+.bottom {
+    margin-top: 20px;         /* Jarak atas dari bagian bawah */
+}
+
+.bottom a {
+    color: #333;              /* Warna teks tautan */
+    text-decoration: underline;     /* Menghilangkan garis bawah */
+}
+
+.bottom a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Media Query untuk layar kecil */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;       /* Ukuran font judul lebih kecil */
+    }
+
+    .input {
+        padding: 20px;         /* Mengurangi padding pada layar kecil */
+    }
+}

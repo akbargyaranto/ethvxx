@@ -1,0 +1,358 @@
+body {
+  background-color: white;
+  color: black;
+  min-height:100vh;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.btnn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btnn:hover {
+  background-color: #333;
+}
+
+.card-body {
+  background-color: white;
+  color: black;
+}
+
+.rounded-image {
+  border-radius: 10px;
+}
+
+details {
+  z-index: 99;
+}
+
+
+.menu a {
+  border: 2px solid black;
+  display: inline-block;
+  padding: 7px;
+  font-weight: 500;
+}
+
+
+
+.carousel-cell {
+  width: 100%; /* Sesuaikan dengan lebar gambar */
+}
+
+.flickity-page-dots {
+  bottom: 1px !important; /* Sesuaikan dengan jarak dari bawah yang diinginkan */
+}
+
+.form-container {
+  padding-top: 10px !important;
+}
+
+/* Mengatur ukuran ikon bulat carousel */
+.flickity-page-dots .dot {
+  width: 7px !important; 
+  height: 7px !important;
+}
+
+.card-body p {
+  margin: 0; /* Menghilangkan margin default */
+  padding: 0; /* Menghilangkan padding default */
+}
+
+
+
+.form-group {
+  margin-top: 20px;
+}
+
+/* Gaya untuk input form valid */
+input:valid, textarea:valid {
+  border-color: black !important; /* Ubah warna border menjadi hijau saat input valid */
+}
+
+/* Gaya untuk input form invalid */
+input:invalid, textarea:invalid {
+  border-color: red; /* Ubah warna border menjadi merah saat input invalid */
+}
+
+
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  color: black;
+}
+
+select:focus {
+  outline: none;
+  border-color: black;
+}
+
+/* Style untuk opsi grup */
+optgroup {
+  font-weight: bold;
+}
+
+/* Style untuk opsi */
+option {
+  padding: 5px;
+}
+
+
+
+
+/* CSS untuk dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-toggle {
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  font-weight: bold;
+}
+
+                           
+.dropdown-toggle i {
+  position: absolute;
+  left: 18.5em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  min-width: 330px;
+}
+
+.payment-method {
+  padding: 6px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.payment-header {
+  text-align: left;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+/* Tampilkan dropdown saat diklik */
+.show {
+  display: block;
+}
+
+.content p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.content ul {
+  padding-left: 20px; /* Adjust the padding as needed */
+  list-style-type: disc; /* You can use 'disc', 'circle', 'square', or 'none' */
+}
+.content li {
+  margin-bottom: 5px; /* Space between list items */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.form-group .required {
+  color: red;
+}
+
+.form-group input:invalid,
+.form-group textarea:invalid {
+  border-color: red;
+}
+
+.form-group input:valid,
+.form-group textarea:valid {
+  border-color: green;
+}
+
+.submit-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+/* CSS untuk ukuran gambar pada layar mobile (contoh: lebar maksimum 600px) */
+@media (max-width: 414px) {
+  .rounded-image {
+    width: 400; /* Gambar akan mengisi lebar viewport */
+    height: 600; /* Menjaga aspek ratio gambar */
+  }
+
+  .card-body h2 {
+    text-align: left;
+    line-height: 1.2; /* Sesuaikan nilai ini untuk mengatur jarak antar baris */
+    padding-bottom: 0 !important;
+    font-size: 14px !important;
+  }
+}
+
+.size {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .card.col-sm-3 {
+    max-width: 40%;
+  }
+
+
+  .size {
+    font-size: 12px !important;
+  }
+
+  .kategori {
+    font-size: 20px !important;
+    padding-top: 16px;
+  }
+
+  .welcome {
+    font-size: 18px !important;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px !important;
+  }
+
+  .deskripsi {
+    font-size: 12px !important;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5 !important;
+  }
+
+  .card-body h2 {
+    text-align: left;
+    line-height: 1.2; /* Sesuaikan nilai ini untuk mengatur jarak antar baris */
+    padding-bottom: 0 !important;
+    font-size: 14px !important;
+  }
+
+  .btn-black {
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px !important;
+  }
+
+  .gap-3 .badge {
+    font-size: 11px; /* Ubah ukuran font sesuai keinginan Anda */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-body h2 {
+    text-align: left;
+    line-height: 1.2; /* Sesuaikan nilai ini untuk mengatur jarak antar baris */
+    padding-bottom: 0 !important;
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .card.col-sm-3 {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 348px) {
+  .card-body h2 {
+    text-align: left;
+    line-height: 1.2; /* Sesuaikan nilai ini untuk mengatur jarak antar baris */
+    padding-bottom: 0 !important;
+    font-size: 14px !important;
+  }
+}
+
+/* #backToStart {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#backToStart img {
+  width: 40px;
+  height: 40px;
+} */
+
+/* #backToStart:hover {
+  
+  } */

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EtherealVortex - Tempat belanja online terbaik untuk produk-produk berkualitas.">
+  <meta name="keywords" content="belanja, online, produk, EtherealVortex">
+  <title>EtherealVortex</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html,
+    body {
+      background-color: white;
+      color: black;
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+
+    .menu a {
+      border: 2px solid black;
+      display: inline-block;
+      padding: 7px;
+      font-weight: 500;
+      border-radius: 0;
+    }
+
+    .deskripsi {
+      font-size: 15px;
+      margin:0;
+      padding:0;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="shadow">
+    <div class="navbar px-4">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl" href="index.html">EtherealVortex</a>
+        </div>
+        
+        <div class="flex-none">
+            <div class="flex-none">
+                <ul class="menu menu-horizontal px-1">
+                    <a href="carabelanja.html">Cara Belanja</a>
+                </ul>
+            </div>
+        </div>
+</nav>
+
+
+  <!-- MAIN CONTENT -->
+  <div class="container mx-auto px-4 py-5 space-y-4 content">
+    <details class="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden" open>
+      <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+        <h2 class="text-base font-semibold">Bagaimana cara melakukan pemesanan?</h2>
+        <span class="relative size-5 shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 size-5 opacity-100 group-open:opacity-0"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 size-5 opacity-0 group-open:opacity-100"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </span>
+      </summary>
+      <p class="mt-4 leading-relaxed text-gray-700 deskripsi">
+        Pilih produk yang tersedia pada halaman website EtherealVortex lalu tekan tombol Beli Sekarang, Anda akan
+        diarahkan ke detail produk.
+        Tersedia metode pembayaran yang dapat digunakan untuk pembayaran di EtherealVortex.
+        Selanjutnya ada formulir yang harus Anda isi untuk melakukan pemesanan. Isi data dengan benar. Lalu tekan tombol
+        Beli Sekarang, Anda akan diarahkan langsung ke Nomor WhatsApp kami.
+      </p>
+    </details>
+
+    <details class="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden" open>
+      <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+        <h2 class="text-base font-semibold">Apa metode pembayaran yang diterima?</h2>
+        <span class="relative size-5 shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 size-5 opacity-100 group-open:opacity-0"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 size-5 opacity-0 group-open:opacity-100"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </span>
+      </summary>
+      <p class="mt-4 leading-relaxed text-gray-700 deskripsi">
+        Kami menerima pembayaran melalui E-wallet, Transfer Virtual Account, dan Transfer Bank. Selengkapnya bisa Anda
+        cek di detail halaman produk.
+      </p>
+    </details>
+  </div>
+
+
+</body>
+
+</html>
